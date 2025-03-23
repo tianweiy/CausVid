@@ -1,0 +1,53 @@
+model_name: wan
+generator_name: causal_wan
+generator_ckpt: "wan_causal_ode_checkpoint_model_003000/model.pt"
+generator_fsdp_wrap_strategy: size
+real_score_fsdp_wrap_strategy: size
+fake_score_fsdp_wrap_strategy: size
+text_encoder_fsdp_wrap_strategy: size
+generator_grad:
+  model: true
+real_score_grad:
+  model: false
+fake_score_grad:
+  model: true
+denoising_step_list:
+- 1000
+- 757
+- 522
+- 0
+num_train_timestep: 1000
+timestep_shift: 8.0
+real_guidance_scale: 3.5
+generator_task: causal_video
+real_task_type: bidirectional_video
+fake_task_type: bidirectional_video
+denoising_loss_type: flow
+mixed_precision: true
+seed: 0
+wandb_host: WANDB_HOST
+wandb_key: WANDB_KEY
+wandb_entity: tyin
+wandb_project: causvid
+wandb_name: wan_i2v_causal_dmd
+sharding_strategy: hybrid_full
+lr: 2.0e-06
+beta1: 0.9
+beta2: 0.999
+data_path: mixkit_latents_lmdb
+batch_size: 1
+log_iters: 200
+negative_prompt: '色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走'
+dfake_gen_update_ratio: 5
+image_or_video_shape:
+- 1
+- 21
+- 16
+- 60
+- 104
+output_path: /mnt/localssd/wan_i2v_causal_dmd
+distillation_loss: dmd
+gradient_checkpointing: true
+backward_simulation: false
+num_frame_per_block: 4
+i2v: True 
