@@ -1,0 +1,632 @@
+[
+  {
+    "file_name": "a brown bear in the water with a fish in its mouth.jpg",
+    "url": "pixabay.com/zh/photos/brown-bear-predator-wild-beast-2514853",
+    "type": "animal",
+    "origin_width": 2048,
+    "origin_height": 1320,
+    "first_crop": {
+      "width": 2048,
+      "height": 1320,
+      "first_bbox": [
+        0,
+        0,
+        2048,
+        1152
+      ]
+    },
+    "second_crop": {
+      "width": 2048,
+      "height": 1152,
+      "second_bbox": [
+        519,
+        0,
+        1152,
+        1152
+      ]
+    },
+    "diff_ratio_crop": {
+      "1-1": [
+        519,
+        0,
+        1152,
+        1152
+      ],
+      "8-5": [
+        13,
+        0,
+        1840,
+        1150
+      ],
+      "7-4": [
+        3,
+        0,
+        2016,
+        1152
+      ],
+      "16-9": [
+        0,
+        0,
+        2048,
+        1152
+      ]
+    },
+    "caption": "a brown bear in the water with a fish in its mouth",
+    "target_crop": {
+      "target_ratio": "26-15",
+      "target_bbox": [
+        6,
+        0,
+        1976,
+        1140
+      ]
+    }
+  },
+  {
+    "file_name": "a close-up of a hippopotamus eating grass in a field.jpg",
+    "url": "www.pexels.com/photo/animal-on-green-grass-field-4003495",
+    "type": "animal",
+    "origin_width": 4272,
+    "origin_height": 2848,
+    "first_crop": {
+      "width": 4272,
+      "height": 2848,
+      "first_bbox": [
+        0,
+        377,
+        4272,
+        2403
+      ]
+    },
+    "second_crop": {
+      "width": 4272,
+      "height": 2403,
+      "second_bbox": [
+        1189,
+        0,
+        2403,
+        2403
+      ]
+    },
+    "diff_ratio_crop": {
+      "1-1": [
+        1189,
+        377,
+        2403,
+        2403
+      ],
+      "8-5": [
+        26,
+        377,
+        3840,
+        2400
+      ],
+      "7-4": [
+        6,
+        377,
+        4200,
+        2400
+      ],
+      "16-9": [
+        0,
+        377,
+        4272,
+        2403
+      ]
+    },
+    "caption": "a close-up of a hippopotamus eating grass in a field",
+    "target_crop": {
+      "target_ratio": "26-15",
+      "target_bbox": [
+        6,
+        377,
+        4160,
+        2400
+      ]
+    }
+  },
+  {
+    "file_name": "a sea turtle swimming in the ocean under the water.jpg",
+    "url": "www.pexels.com/photo/baby-turtle-swimming-underwater-12026138",
+    "type": "animal",
+    "origin_width": 4000,
+    "origin_height": 3000,
+    "first_crop": {
+      "width": 4000,
+      "height": 3000,
+      "first_bbox": [
+        0,
+        348,
+        4000,
+        2250
+      ]
+    },
+    "second_crop": {
+      "width": 4000,
+      "height": 2250,
+      "second_bbox": [
+        828,
+        0,
+        2250,
+        2250
+      ]
+    },
+    "diff_ratio_crop": {
+      "1-1": [
+        828,
+        348,
+        2250,
+        2250
+      ],
+      "8-5": [
+        26,
+        348,
+        3600,
+        2250
+      ],
+      "7-4": [
+        6,
+        348,
+        3934,
+        2248
+      ],
+      "16-9": [
+        0,
+        348,
+        4000,
+        2250
+      ]
+    },
+    "caption": "a sea turtle swimming in the ocean under the water",
+    "target_crop": {
+      "target_ratio": "26-15",
+      "target_bbox": [
+        6,
+        348,
+        3900,
+        2250
+      ]
+    }
+  },
+  {
+    "file_name": "two bees are flying over a lavender plant.jpg",
+    "url": "www.pexels.com/photo/bees-on-purple-flower-164470",
+    "type": "animal",
+    "origin_width": 3000,
+    "origin_height": 2132,
+    "first_crop": {
+      "width": 3000,
+      "height": 2132,
+      "first_bbox": [
+        0,
+        234,
+        2992,
+        1683
+      ]
+    },
+    "second_crop": {
+      "width": 2992,
+      "height": 1683,
+      "second_bbox": [
+        316,
+        0,
+        1683,
+        1683
+      ]
+    },
+    "diff_ratio_crop": {
+      "1-1": [
+        316,
+        234,
+        1683,
+        1683
+      ],
+      "8-5": [
+        26,
+        234,
+        2688,
+        1680
+      ],
+      "7-4": [
+        3,
+        234,
+        2940,
+        1680
+      ],
+      "16-9": [
+        0,
+        234,
+        2992,
+        1683
+      ]
+    },
+    "caption": "two bees are flying over a lavender plant",
+    "target_crop": {
+      "target_ratio": "26-15",
+      "target_bbox": [
+        6,
+        234,
+        2912,
+        1680
+      ]
+    }
+  },
+  {
+    "file_name": "the otter is standing in the water.jpg",
+    "url": "www.pexels.com/photo/black-and-gray-rodent-about-to-dive-before-body-of-water-146010",
+    "type": "animal",
+    "origin_width": 4090,
+    "origin_height": 2709,
+    "first_crop": {
+      "width": 4090,
+      "height": 2709,
+      "first_bbox": [
+        0,
+        139,
+        4080,
+        2295
+      ]
+    },
+    "second_crop": {
+      "width": 4080,
+      "height": 2295,
+      "second_bbox": [
+        1325,
+        0,
+        2295,
+        2295
+      ]
+    },
+    "diff_ratio_crop": {
+      "1-1": [
+        1325,
+        139,
+        2295,
+        2295
+      ],
+      "8-5": [
+        26,
+        139,
+        3672,
+        2295
+      ],
+      "7-4": [
+        6,
+        139,
+        4011,
+        2292
+      ],
+      "16-9": [
+        0,
+        139,
+        4080,
+        2295
+      ]
+    },
+    "caption": "the otter is standing in the water",
+    "target_crop": {
+      "target_ratio": "26-15",
+      "target_bbox": [
+        6,
+        139,
+        3978,
+        2295
+      ]
+    }
+  },
+  {
+    "file_name": "a dog carrying a soccer ball in its mouth.jpg",
+    "url": "www.pexels.com/photo/brindle-and-white-american-pit-bull-terrier-puppy-walking-outdoor-holding-green-ball-1383813",
+    "type": "animal",
+    "origin_width": 6000,
+    "origin_height": 4000,
+    "first_crop": {
+      "width": 6000,
+      "height": 4000,
+      "first_bbox": [
+        0,
+        431,
+        6000,
+        3375
+      ]
+    },
+    "second_crop": {
+      "width": 6000,
+      "height": 3375,
+      "second_bbox": [
+        1910,
+        0,
+        3375,
+        3375
+      ]
+    },
+    "diff_ratio_crop": {
+      "1-1": [
+        1910,
+        431,
+        3375,
+        3375
+      ],
+      "8-5": [
+        53,
+        431,
+        5400,
+        3375
+      ],
+      "7-4": [
+        6,
+        431,
+        5901,
+        3372
+      ],
+      "16-9": [
+        0,
+        431,
+        6000,
+        3375
+      ]
+    },
+    "caption": "a dog carrying a soccer ball in its mouth",
+    "target_crop": {
+      "target_ratio": "26-15",
+      "target_bbox": [
+        13,
+        431,
+        5850,
+        3375
+      ]
+    }
+  },
+  {
+    "file_name": "an eagle is flying over a mountain with trees in the background.jpg",
+    "url": "www.pexels.com/photo/brown-and-black-flying-hawk-53587",
+    "type": "animal",
+    "origin_width": 4928,
+    "origin_height": 3264,
+    "first_crop": {
+      "width": 4928,
+      "height": 3264,
+      "first_bbox": [
+        0,
+        77,
+        4928,
+        2772
+      ]
+    },
+    "second_crop": {
+      "width": 4928,
+      "height": 2772,
+      "second_bbox": [
+        1748,
+        0,
+        2772,
+        2772
+      ]
+    },
+    "diff_ratio_crop": {
+      "1-1": [
+        1748,
+        77,
+        2772,
+        2772
+      ],
+      "8-5": [
+        114,
+        77,
+        4432,
+        2770
+      ],
+      "7-4": [
+        6,
+        77,
+        4851,
+        2772
+      ],
+      "16-9": [
+        0,
+        77,
+        4928,
+        2772
+      ]
+    },
+    "caption": "an eagle is flying over a mountain with trees in the background",
+    "target_crop": {
+      "target_ratio": "26-15",
+      "target_bbox": [
+        13,
+        77,
+        4784,
+        2760
+      ]
+    }
+  },
+  {
+    "file_name": "a couple of horses are running in the dirt.jpg",
+    "url": "www.pexels.com/photo/brown-and-white-stallions-running-in-a-field-52500",
+    "type": "animal",
+    "origin_width": 4500,
+    "origin_height": 3000,
+    "first_crop": {
+      "width": 4500,
+      "height": 3000,
+      "first_bbox": [
+        0,
+        360,
+        4496,
+        2529
+      ]
+    },
+    "second_crop": {
+      "width": 4496,
+      "height": 2529,
+      "second_bbox": [
+        976,
+        0,
+        2529,
+        2529
+      ]
+    },
+    "diff_ratio_crop": {
+      "1-1": [
+        976,
+        360,
+        2529,
+        2529
+      ],
+      "8-5": [
+        26,
+        360,
+        4040,
+        2525
+      ],
+      "7-4": [
+        6,
+        360,
+        4424,
+        2528
+      ],
+      "16-9": [
+        0,
+        360,
+        4496,
+        2529
+      ]
+    },
+    "caption": "a couple of horses are running in the dirt",
+    "target_crop": {
+      "target_ratio": "26-15",
+      "target_bbox": [
+        13,
+        360,
+        4368,
+        2520
+      ]
+    }
+  },
+  {
+    "file_name": "a highland cow with long horns standing in a field.jpg",
+    "url": "www.pexels.com/photo/brown-bull-on-green-glass-field-under-grey-and-blue-cloudy-sky-139399",
+    "type": "animal",
+    "origin_width": 4928,
+    "origin_height": 3264,
+    "first_crop": {
+      "width": 4928,
+      "height": 3264,
+      "first_bbox": [
+        0,
+        191,
+        4928,
+        2772
+      ]
+    },
+    "second_crop": {
+      "width": 4928,
+      "height": 2772,
+      "second_bbox": [
+        836,
+        0,
+        2772,
+        2772
+      ]
+    },
+    "diff_ratio_crop": {
+      "1-1": [
+        836,
+        191,
+        2772,
+        2772
+      ],
+      "8-5": [
+        26,
+        191,
+        4432,
+        2770
+      ],
+      "7-4": [
+        6,
+        191,
+        4851,
+        2772
+      ],
+      "16-9": [
+        0,
+        191,
+        4928,
+        2772
+      ]
+    },
+    "caption": "a highland cow with long horns standing in a field",
+    "target_crop": {
+      "target_ratio": "26-15",
+      "target_bbox": [
+        13,
+        191,
+        4784,
+        2760
+      ]
+    }
+  },
+  {
+    "file_name": "a monkey is holding a banana in its mouth.jpg",
+    "url": "www.pexels.com/photo/brown-monkey-holding-a-banana-peel-13625494",
+    "type": "animal",
+    "origin_width": 5087,
+    "origin_height": 3630,
+    "first_crop": {
+      "width": 5087,
+      "height": 3630,
+      "first_bbox": [
+        0,
+        399,
+        5072,
+        2853
+      ]
+    },
+    "second_crop": {
+      "width": 5072,
+      "height": 2853,
+      "second_bbox": [
+        930,
+        0,
+        2853,
+        2853
+      ]
+    },
+    "diff_ratio_crop": {
+      "1-1": [
+        930,
+        399,
+        2853,
+        2853
+      ],
+      "8-5": [
+        53,
+        399,
+        4560,
+        2850
+      ],
+      "7-4": [
+        6,
+        399,
+        4991,
+        2852
+      ],
+      "16-9": [
+        0,
+        399,
+        5072,
+        2853
+      ]
+    },
+    "caption": "a monkey is holding a banana in its mouth",
+    "target_crop": {
+      "target_ratio": "26-15",
+      "target_bbox": [
+        13,
+        399,
+        4940,
+        2850
+      ]
+    }
+  }
+]
