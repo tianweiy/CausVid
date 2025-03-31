@@ -3,7 +3,7 @@ from causvid.models import (
     get_text_encoder_wrapper,
     get_vae_wrapper
 )
-from typing import List, Optional
+from typing import List
 import torch
 
 
@@ -82,6 +82,7 @@ class InferencePipeline(torch.nn.Module):
                 (batch_size, num_frames, num_channels, height, width). It is normalized to be in the range [0, 1].
         """
         batch_size, num_frames, num_channels, height, width = noise.shape
+        num_frames += initial_latent.shape[1]  # add the initial latent frames
         conditional_dict = self.text_encoder(
             text_prompts=text_prompts
         )
@@ -110,11 +111,10 @@ class InferencePipeline(torch.nn.Module):
             for block_index in range(self.num_transformer_blocks):
                 self.crossattn_cache[block_index]["is_init"] = False
 
-
         # Step 2: Temporal denoising loop
-        num_blocks = (num_frames-1) // self.num_frame_per_block 
+        num_blocks = (num_frames - 1) // self.num_frame_per_block
 
-        # I2V: Cache context feature 
+        # I2V: Cache context feature
         timestep = torch.ones(
             [batch_size, 1], device=noise.device, dtype=torch.int64) * 0
 
@@ -130,10 +130,9 @@ class InferencePipeline(torch.nn.Module):
             current_end=self.frame_seq_length
         )
 
-        # Denoising 
+        # Denoising
         for block_index in range(num_blocks):
-            noisy_input = noise[:, 1+block_index *
-                                self.num_frame_per_block:1+(block_index + 1) * self.num_frame_per_block]
+            noisy_input = noise[:, block_index * self.num_frame_per_block:(block_index + 1) * self.num_frame_per_block]
 
             # Step 2.1: Spatial denoising loop
             for index, current_timestep in enumerate(self.denoising_step_list):
@@ -156,9 +155,7 @@ class InferencePipeline(torch.nn.Module):
                     noisy_input = self.scheduler.add_noise(
                         denoised_pred.flatten(0, 1),
                         torch.randn_like(denoised_pred.flatten(0, 1)),
-                        next_timestep *
-                        torch.ones([batch_size], device="cuda",
-                                   dtype=torch.long)
+                        next_timestep * torch.ones([batch_size], device="cuda", dtype=torch.long)
                     ).unflatten(0, denoised_pred.shape[:2])
                 else:
                     # for getting real output
@@ -184,8 +181,7 @@ class InferencePipeline(torch.nn.Module):
                 kv_cache=self.kv_cache1,
                 crossattn_cache=self.crossattn_cache,
                 current_start=self.frame_seq_length + block_index * self.num_frame_per_block * self.frame_seq_length,
-                current_end=self.frame_seq_length + (block_index + 1) *
-                self.num_frame_per_block * self.frame_seq_length
+                current_end=self.frame_seq_length + (block_index + 1) * self.num_frame_per_block * self.frame_seq_length
             )
 
         # Step 3: Decode the output
