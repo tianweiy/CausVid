@@ -1,0 +1,30 @@
+model_name: causal_wan
+generator_grad:
+  model: true
+denoising_step_list:
+- 1000
+- 757
+- 522
+- 0
+generator_task: causal_video
+generator_fsdp_wrap_strategy: size
+text_encoder_fsdp_wrap_strategy: size
+mixed_precision: true
+seed: 0
+wandb_host: WANDB_HOST
+wandb_key: WANDB_KEY
+wandb_entity: tyin
+wandb_project: causvid
+wandb_name: wan_i2v_causal_ode
+sharding_strategy: hybrid_full
+lr: 2.0e-06
+beta1: 0.9
+beta2: 0.999
+data_path: mixkit_ode_lmdb
+batch_size: 2
+log_iters: 200
+output_path: /mnt/localssd/wan_i2v_causal_ode
+distillation_loss: ode
+gradient_checkpointing: true
+num_frame_per_block: 4
+i2v: True 
